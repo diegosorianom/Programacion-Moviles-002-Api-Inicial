@@ -11,6 +11,29 @@
  </head>
  <body>
     <div id="map"></div>
+    <div class="filter-buttons">
+        <button id="filter-wildfires">Wildfires</button>
+        <button id="filter-volcanoes">Volcanoes</button>
+        <button id="filter-earthquakes">Earthquakes</button>
+        <button id="filter-floods">Floods</button>
+        <button id="filter-severeStorms">Severe Storms</button>
+        <button id="filter-snow">Snow</button>
+        <button id="filter-seaLakeIce">Sea/Lake Ice</button>
+        <button id="filter-dustHaze">Dust/Haze</button>
+        <button id="filter-landslides">Landslides</button>
+        <button id="filter-manmade">Manmade</button>
+        <button id="filter-tempExtremes">Temperature Extremes</button>
+        <button id="filter-waterColor">Water Color</button>
+        <button id="filter-clear">Clear Filters</button>
+    </div>
+    <div class="date-filter">
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date">
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date">
+        <button id="apply-date-filter">Apply Date Filter</button>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="main.js"></script>
  </body>

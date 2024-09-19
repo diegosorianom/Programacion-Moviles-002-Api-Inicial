@@ -10,4 +10,17 @@ body{
 #map{
     height: 100%;
     width: 100%;
+    cursor: default;
+}
+
+.filter-buttons{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.date-filter{
+    position: absolute;
+    bottom: 10px;
+    left: 120px;
 }
