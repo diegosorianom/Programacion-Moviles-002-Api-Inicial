@@ -8,30 +8,38 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.2.2/maptiler-sdk.umd.min.js"></script>
     <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.2.2/maptiler-sdk.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
  </head>
  <body>
     <div id="map"></div>
-    <div class="filter-buttons">
-        <button id="filter-wildfires">Wildfires</button>
-        <button id="filter-volcanoes">Volcanoes</button>
-        <button id="filter-earthquakes">Earthquakes</button>
-        <button id="filter-floods">Floods</button>
-        <button id="filter-severeStorms">Severe Storms</button>
-        <button id="filter-snow">Snow</button>
-        <button id="filter-seaLakeIce">Sea/Lake Ice</button>
-        <button id="filter-dustHaze">Dust/Haze</button>
-        <button id="filter-landslides">Landslides</button>
-        <button id="filter-manmade">Manmade</button>
-        <button id="filter-tempExtremes">Temperature Extremes</button>
-        <button id="filter-waterColor">Water Color</button>
-        <button id="filter-clear">Clear Filters</button>
-    </div>
-    <div class="date-filter">
-        <label for="start-date">Start Date:</label>
-        <input type="date" id="start-date">
-        <label for="end-date">End Date:</label>
-        <input type="date" id="end-date">
-        <button id="apply-date-filter">Apply Date Filter</button>
+    <button id="toggle-button">Mostrar/Ocultar Filtros</button>
+    <div id="desplegable">
+        <div class="filter-buttons">
+            <p><strong>Filtrar por categoría</strong></p>
+            <button id="filter-wildfires">Incendios</button>
+            <button id="filter-volcanoes">Volcanes</button>
+            <button id="filter-earthquakes">Terremotos</button>
+            <button id="filter-floods">Inundaciones</button>
+            <button id="filter-severeStorms">Tormentas</button>
+            <button id="filter-snow">Nevadas</button>
+            <button id="filter-seaLakeIce">Icebergs</button>
+            <button id="filter-dustHaze">Bruma</button>
+            <button id="filter-landslides">Desprendimientos</button>
+            <button id="filter-manmade">Provocados</button>
+            <button id="filter-tempExtremes">Temperatura extrema</button>
+            <button id="filter-waterColor">Lluvias</button>
+            <button id="filter-clear">Limpiar filtros</button>
+        </div>
+        <div class="date-filter">
+            <label for="start-date">Fecha de inicio:</label>
+            <input type="date" id="start-date"><br>
+            <label for="end-date">Fecha de fin:</label>
+            <input type="date" id="end-date"><br>
+            <button id="apply-date-filter">Aplicar filtro de fecha</button>
+            <button id="clear-date-filter">Limpiar filtro de fecha</button>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
