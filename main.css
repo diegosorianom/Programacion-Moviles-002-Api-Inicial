@@ -5,9 +5,7 @@ body{
     height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: "Montserrat";
     font-size: 1rem;
-    color: #FAF9F6;
 }
 
 #map{
@@ -16,90 +14,14 @@ body{
     cursor: default;
 }
 
-#toggle-button{
+.filter-buttons{
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #3c3c3c;
-    color: #FAF9F6;
-    z-index: 10;
 }
 
-#toggle-button:hover{
-    font-weight: 400;
-}
-
-#desplegable{
-    background-color: #3c3c3c;
-    height: auto;
-    /* display: flex; */
-    display: none;
-    flex-direction: column;
-    position: absolute; 
-    top: 10px;
+.date-filter{
+    position: absolute;
+    bottom: 50px;
     left: 10px;
-    gap: 30px;
-    box-sizing: border-box;
-    padding: 20px 20px;
-    border-radius: 20px;
-    /* text-align: center; */
-    width: 300px;
-}
-
-#desplegable p{
-    text-align: center;
-}
-
-.filter-buttons, .date-filter{
-    display: flex;
-    flex-direction: column;
-}
-
-button{
-    border: none;
-    background-color: transparent;
-    outline: none;
-    box-sizing: border-box;
-    padding: 5px;
-    font-family: inherit;
-    font-size: inherit;
-    cursor: pointer;
-    color: inherit;
-    text-align: start;
-    transition: all 0.2s;
-}
-
-button:hover{
-    font-weight: 900;
-    color: #3c3c3c;
-    background-color: #FAF9F6;
-}
-
-/* Nueva clase para aplicar cuando el botón está seleccionado */
-button.active {
-    font-weight: 700;
-    color: #9bffa3;
-}
-
-.date-filter input{
-    border: none;
-    background-color: transparent;
-    outline: none;
-    box-sizing: border-box;
-    padding: 5px;
-    font-family: inherit;
-    font-size: inherit;
-    cursor: pointer;
-    color: inherit;
-    text-align: start;
-    transition: all 0.2s;
-}
-
-#start-date, #end-date{
-    background-color: #FAF9F6;
-    color: #3c3c3c;
-}
-
-.maplibregl-popup-content{
-    color: #3c3c3c;
 }
